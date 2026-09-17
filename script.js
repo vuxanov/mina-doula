@@ -62,7 +62,7 @@ const portfolioPhotos = [
   '_Z1A9461.jpg', '100049030024a.jpg', '100049030036a.jpg',
 ].map((filename) => ({
   filename,
-  src: `Images/Maternity%20photoshoot/${encodeURIComponent(filename).replaceAll('%2F', '/')}`,
+  src: `Images/Maternity%20photoshoot/${encodeURIComponent(filename).replaceAll('%2F', '/')}?v=1`,
   alt: 'Maternity photograph by Mina',
 }));
 
