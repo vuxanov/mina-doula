@@ -62,13 +62,14 @@ const portfolioPhotos = [
   '_Z1A9461.jpg', '100049030024a.jpg', '100049030036a.jpg',
 ].map((filename) => ({
   filename,
-  src: `Images/Maternity%20photoshoot/${encodeURIComponent(filename).replaceAll('%2F', '/')}?v=1`,
+  thumbSrc: `Images/Maternity%20photoshoot/web/thumb/${encodeURIComponent(filename.replace(/\.[^.]+$/, '.webp')).replaceAll('%2F', '/')}`,
+  fullSrc: `Images/Maternity%20photoshoot/web/full/${encodeURIComponent(filename.replace(/\.[^.]+$/, '.webp')).replaceAll('%2F', '/')}`,
   alt: 'Maternity photograph by Mina',
 }));
 
 function photoButton(index, className = '') {
   const photo = portfolioPhotos[index];
-  return `<button class="${className}" type="button" data-photo-index="${index}" aria-label="Open photo ${index + 1} of ${portfolioPhotos.length}"><img src="${photo.src}" alt="${photo.alt}" loading="lazy" /></button>`;
+  return `<button class="${className}" type="button" data-photo-index="${index}" aria-label="Open photo ${index + 1} of ${portfolioPhotos.length}"><img src="${photo.thumbSrc}" alt="${photo.alt}" loading="lazy" decoding="async" /></button>`;
 }
 
 let lightbox;
@@ -108,7 +109,7 @@ function showLightboxPhoto(index) {
   const dialog = createLightbox();
   const photo = portfolioPhotos[normalizedIndex];
   dialog.dataset.index = String(normalizedIndex);
-  dialog.querySelector('[data-lightbox-image]').src = photo.src;
+  dialog.querySelector('[data-lightbox-image]').src = photo.fullSrc;
   dialog.querySelector('[data-lightbox-image]').alt = photo.alt;
   dialog.querySelector('[data-lightbox-caption]').textContent = `${normalizedIndex + 1} / ${portfolioPhotos.length}`;
 }
