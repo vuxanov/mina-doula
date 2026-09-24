@@ -156,6 +156,13 @@ h2 { margin-bottom: 1.25rem; font-family: var(--display); font-size: var(--type-
 .blog-post h1 { max-width: 18ch; color: var(--forest); font-family: var(--display); font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 550; letter-spacing: -.035em; line-height: .98; text-wrap: balance; }
 .blog-post-copy { margin-top: clamp(2.5rem, 5vw, 4.5rem); color: var(--forest); font-size: clamp(1.15rem, 1.7vw, 1.4rem); line-height: 1.65; }
 .blog-post-copy p + p { margin-top: 1.45rem; }
+.article-metadata { display: flex; flex-wrap: wrap; gap: .45rem 1.25rem; margin: 2rem 0 0; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--soft-ink); font-family: var(--ui); font-size: .94rem; line-height: 1.45; }
+.article-metadata p { margin: 0; }
+.article-sources { margin-top: clamp(3rem, 6vw, 4.5rem); padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.article-sources h2 { margin-bottom: 1rem; font-size: clamp(1.7rem, 3vw, 2.35rem); }
+.article-sources ul { display: grid; gap: .65rem; margin: 0; padding-left: 1.2rem; }
+.article-sources a { text-underline-offset: .22em; }
+.article-sources a:hover, .article-sources a:focus-visible { color: var(--rose); }
 .blog-post-return { display: inline-block; margin-top: clamp(3rem, 7vw, 6rem); color: var(--forest); font-family: var(--ui); font-weight: 650; text-underline-offset: .22em; }
 .blog-post-return:hover, .blog-post-return:focus-visible { color: var(--rose); }
 
