@@ -53,17 +53,16 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 const portfolioPhotos = [
-  '_Z1A0780.jpg', '_Z1A2058.jpg', '_Z1A0827.jpg', '_Z1A5909.JPG', '_Z1A5919.JPG',
-  '_Z1A5895.jpg', '_Z1A5934.jpg', '_Z1A0555.jpg', '_Z1A0703.jpg',
-  '_Z1A1991.jpg', '_Z1A2055.jpg', '_Z1A2218.jpg', '_Z1A2277.jpg', '_Z1A2487.jpg',
-  '_Z1A5086.JPG', '_Z1A5152.JPG', '_Z1A5329.JPG', '_Z1A5354.JPG',
-  '_Z1A5827.jpg', '_Z1A7268.jpg', '_Z1A7281.jpg', '_Z1A7478 2.jpg', '_Z1A7608.jpg',
-  '_Z1A7632.jpg', '_Z1A9050.jpg', '_Z1A9111.jpg', '_Z1A9160.jpg', '_Z1A9253.jpg',
-  '_Z1A9461.jpg', '100049030024a.jpg', '100049030036a.jpg',
+  '_Z1A0555.jpg', '_Z1A0703.jpg', '_Z1A0827.jpg', '_Z1A1991.jpg', '_Z1A2055.jpg',
+  '_Z1A2058.jpg', '_Z1A2218.jpg', '_Z1A2277.jpg', '_Z1A2487.jpg', '_Z1A5086.JPG',
+  '_Z1A5152.JPG', '_Z1A5329.JPG', '_Z1A5354.JPG', '_Z1A5827.jpg', '_Z1A5895.jpg',
+  '_Z1A5909.JPG', '_Z1A5919.JPG', '_Z1A7268.jpg', '_Z1A7281.jpg', '_Z1A7478 2.jpg',
+  '_Z1A7608.jpg', '_Z1A7632.jpg', '_Z1A9050.jpg', '_Z1A9111.jpg', '_Z1A9160.jpg',
+  '_Z1A9253.jpg', '100049030036a crop.jpg',
 ].map((filename) => ({
   filename,
-  thumbSrc: `Images/Maternity%20photoshoot/web/thumb/${encodeURIComponent(filename.replace(/\.[^.]+$/, '.webp')).replaceAll('%2F', '/')}`,
-  fullSrc: `Images/Maternity%20photoshoot/web/full/${encodeURIComponent(filename.replace(/\.[^.]+$/, '.webp')).replaceAll('%2F', '/')}`,
+  thumbSrc: `Images/Website%20Gallery/web/thumb/${encodeURIComponent(filename.replace(/\.[^.]+$/, '.webp')).replaceAll('%2F', '/')}`,
+  fullSrc: `Images/Website%20Gallery/web/full/${encodeURIComponent(filename.replace(/\.[^.]+$/, '.webp')).replaceAll('%2F', '/')}`,
   alt: 'Maternity photograph by Mina',
 }));
 
