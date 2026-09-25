@@ -147,6 +147,8 @@ h2 { margin-bottom: 1.25rem; font-family: var(--display); font-size: var(--type-
 .journal-list h3 { margin: auto 0 1rem; font-family: var(--display); font-size: var(--type-card); font-weight: 550; letter-spacing: -.03em; line-height: 1.04; }
 .journal-list a { display: flex; min-height: 100%; flex-direction: column; color: inherit; text-decoration: none; }
 .journal-list p { margin-bottom: 1.5rem; color: var(--mint); font-size: 1.05rem; line-height: 1.45; }
+.journal-list .journal-meta { margin: 0 0 1.25rem; color: var(--mint); font-family: var(--ui); font-size: .92rem; font-weight: 500; line-height: 1.35; }
+.journal-meta time::before { content: " · "; }
 .journal-list span { margin-top: auto; color: var(--blush); font-size: 1.05rem; font-weight: 600; }
 .journal-list article { transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease; }
 .journal-list article:hover { background: rgba(255,250,245,.16); border-color: var(--blush); transform: translateY(-.35rem); }
