@@ -158,6 +158,8 @@ h2 { margin-bottom: 1.25rem; font-family: var(--display); font-size: var(--type-
 .blog-post h1 { max-width: 18ch; color: var(--forest); font-family: var(--display); font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 550; letter-spacing: -.035em; line-height: .98; text-wrap: balance; }
 .blog-post-copy { margin-top: clamp(2.5rem, 5vw, 4.5rem); color: var(--forest); font-size: clamp(1.15rem, 1.7vw, 1.4rem); line-height: 1.65; }
 .blog-post-copy p + p { margin-top: 1.45rem; }
+.blog-post-copy h2 { max-width: 28ch; margin: clamp(3rem, 6vw, 5.25rem) 0 1.1rem; color: var(--forest); font-family: var(--display); font-size: clamp(1.75rem, 3.2vw, 2.7rem); font-weight: 600; letter-spacing: -.028em; line-height: 1.08; text-wrap: balance; }
+.blog-post-copy h2 + p { margin-top: 0; }
 .article-metadata { display: flex; flex-wrap: wrap; gap: .45rem 1.25rem; margin: 2rem 0 0; padding: 1rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); color: var(--soft-ink); font-family: var(--ui); font-size: .94rem; line-height: 1.45; }
 .article-metadata p { margin: 0; }
 .article-sources { margin-top: clamp(3rem, 6vw, 4.5rem); padding-top: 1.5rem; border-top: 1px solid var(--line); }
